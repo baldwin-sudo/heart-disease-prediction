@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%; /* Ensures html and body are full height */
+  margin: 0; /* Resets default margin */
+}
+
+body {
+  background-color: rgba(211, 211, 211, 0.295);
+  background-image: url("./assets/background.jpg");
+  background-size: cover; /* Ensures the image covers the entire body */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  overflow: hidden;
+}

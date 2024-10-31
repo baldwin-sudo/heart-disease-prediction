@@ -1,0 +1,64 @@
+.main-container {
+  /* overflow: hidden; */
+  border-radius: 1rem;
+  position: absolute;
+  /* box-shadow: 0px 0px 5px 5px rgba(182, 182, 182, 0.623); */
+  top: 7.5%;
+  left: 0%;
+  /* transform: translateX(-50%); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(3, 3, 3, 0.295);
+  color: white;
+  gap: 1rem;
+  justify-content: center;
+  border: 1px solid rgb(255, 255, 255);
+  min-width: 45rem;
+  max-width: 45rem;
+  height: 50rem;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid rgb(14, 14, 14); */
+  width: max-content;
+}
+.navigation {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  gap: 2rem;
+}
+.link {
+  font-weight: bold;
+  padding: 1rem 0; /* Removed redundant padding */
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position: relative;
+  width: fit-content; /* Keeps the link size only as wide as its content */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.link:hover {
+  opacity: 0.8; /* Slight transparency on hover */
+  color: rgb(255, 255, 255); /* Change text color on hover */
+}
+
+.link::after {
+  position: absolute; /* Positions it relative to the link */
+  content: ""; /* Empty content for the line effect */
+  top: 100%; /* Places it below the link text */
+  left: 0; /* Aligns it to the left */
+  width: 0%; /* Initially hidden */
+  height: 2px; /* Increased height for better visibility */
+  background-color: rgb(192, 61, 61); /* Line color */
+  transition: width 0.3s ease; /* Smooth transition for the line width */
+}
+
+.link:hover::after,
+.link:focus::after,
+.link:active::after {
+  width: 100%; /* Expands to full width on hover */
+}

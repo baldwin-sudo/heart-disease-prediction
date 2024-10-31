@@ -1,0 +1,23 @@
+.labeledInput-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.label-text {
+  width: 10rem;
+
+  /* background-color: red; */
+}
+.input {
+  width: 10rem;
+}
+.info {
+  margin-left: 1rem;
+  color: rgb(179, 179, 179);
+  font-style: italic;
+}
+.unit {
+  margin-left: 1rem;
+  color: rgb(179, 179, 179);
+  font-style: italic;
+}

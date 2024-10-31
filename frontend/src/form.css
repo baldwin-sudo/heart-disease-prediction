@@ -1,0 +1,21 @@
+form {
+  position: relative;
+  height: max-content;
+}
+h2 {
+  text-align: center;
+}
+#predict-btn {
+  position: absolute;
+  font-weight: bold;
+  font-size: 120%;
+  background-color: rgb(192, 61, 61);
+  color: rgb(240, 240, 240);
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 2rem;
+}
+#predict-btn:hover {
+  background-color: rgba(86, 175, 45, 0.527);
+}
