@@ -1,4 +1,5 @@
 form {
+  margin-top: 2rem;
   position: relative;
   height: max-content;
 }
@@ -6,10 +7,11 @@ h2 {
   text-align: center;
 }
 .buttons {
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 1rem;
 }
 #predict-btn,
 #model-label {
@@ -18,15 +20,17 @@ h2 {
   font-size: 120%;
   background-color: rgb(192, 61, 61);
   color: rgb(240, 240, 240);
+  width: 12rem;
   /* bottom: -3rem; */
   /* left: 50%; */
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   padding: 0.5rem 2rem;
 }
 #predict-btn:hover {
   background-color: rgba(86, 175, 45, 0.527);
 }
 .model-selection {
+  width: 12rem;
   display: flex;
   flex-direction: column;
 }

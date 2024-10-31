@@ -1,0 +1,39 @@
+.prediction-container {
+  position: relative;
+  border: 1px solid white;
+  height: 30rem;
+  width: 30rem;
+}
+h3 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(192, 61, 61); /* Line color */
+  width: 100%;
+  padding: 1rem 0;
+
+  text-align: center;
+}
+.prediction-container div {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#new-predict {
+  margin-top: 12rem; /* position: absolute; */
+  font-weight: bold;
+  font-size: 100%;
+  background-color: rgb(192, 61, 61);
+  color: rgb(240, 240, 240);
+  width: fit-content;
+  /* bottom: -3rem; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  padding: 0.5rem 2rem;
+}
+#new-predict:hover {
+  background-color: rgba(86, 175, 45, 0.527);
+}
