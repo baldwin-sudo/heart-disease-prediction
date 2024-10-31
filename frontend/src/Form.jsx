@@ -12,7 +12,10 @@ function Form() {
       [id]: value,
     }));
   };
-
+  const [selectedModel, setSelectedModel] = useState(""); // State for selected model
+  const handleModelChange = (e) => {
+    setSelectedModel(e.target.value); // Update the selected model
+  };
   return (
     <form>
       {categorical_columns.map((column, index) => (
@@ -38,9 +41,21 @@ function Form() {
           unit={"unit: N/A"} // Adjust unit as necessary
         />
       ))}
-      <button id="predict-btn" type="submit">
-        Predict{" "}
-      </button>
+      <div className="buttons">
+        <div className="model-selection">
+          <select id="model" value={selectedModel} onChange={handleModelChange}>
+            <option value="model1">Knn</option>
+            <option value="model2">logistic Regression</option>
+            <option value="model3">svm</option>
+            <option value="model4">neural network</option>
+            <option value="model5">naive bayes</option>
+            {/* Add more models as needed */}
+          </select>
+        </div>
+        <button id="predict-btn" type="submit">
+          Predict
+        </button>
+      </div>
     </form>
   );
 }

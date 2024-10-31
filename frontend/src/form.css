@@ -5,17 +5,48 @@ form {
 h2 {
   text-align: center;
 }
-#predict-btn {
-  position: absolute;
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+#predict-btn,
+#model-label {
+  /* position: absolute; */
   font-weight: bold;
   font-size: 120%;
   background-color: rgb(192, 61, 61);
   color: rgb(240, 240, 240);
-  bottom: -3rem;
-  left: 50%;
+  /* bottom: -3rem; */
+  /* left: 50%; */
   transform: translateX(-50%);
   padding: 0.5rem 2rem;
 }
 #predict-btn:hover {
   background-color: rgba(86, 175, 45, 0.527);
+}
+.model-selection {
+  display: flex;
+  flex-direction: column;
+}
+/* Select element styling */
+.model-selection select {
+  font-weight: bold; /* Make text bold */
+  font-size: 120%; /* Adjust font size */
+  padding: 0.5rem 1rem; /* Add padding for better spacing */
+  border: 2px solid rgb(107, 62, 62); /* Add border with color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: rgb(240, 240, 240); /* Light background color */
+  color: rgb(0, 0, 0); /* Text color */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover and focus styles */
+.model-selection select:hover,
+.model-selection select:focus {
+  background-color: rgb(255, 255, 255); /* Change background on hover/focus */
+  border-color: rgb(192, 61, 61);
+  outline: none; /* Remove default outline */
 }
